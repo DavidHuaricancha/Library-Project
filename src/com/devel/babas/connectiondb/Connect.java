@@ -81,7 +81,7 @@ public abstract class Connect {
 
             }else {
                 if(startLetter == true){
-                    if(Character.isLowerCase(character)){
+                if(Character.isLowerCase(character)){
 
                         character = Character.toUpperCase(character);
                         returnText = (returnText + character);

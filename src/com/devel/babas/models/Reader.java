@@ -67,12 +67,12 @@ public class Reader extends People implements IModelsUser {
         return p;
     }
 
-    public static Reader newPhoto(String photo, String dni) {
-        Reader p = new Reader();
-        p.setDni(dni);
-        p.setFrom_url(photo);
-        return p;
-    }
+//    public static Reader newPhoto(String photo, String dni) {
+//        Reader p = new Reader();
+//        p.setDni(dni);
+//        p.setFrom_url(photo);
+//        return p;
+//    }
 
     public static String encryp(String password) {
         try {
@@ -213,9 +213,9 @@ public class Reader extends People implements IModelsUser {
         return code;
     }
 
-    public String toString() {
+/*    public String toString() {
         return "Worker{id_people=" + this.getId_people() + ", First_name=" + this.getFirstName() + ",from_url =" + this.getFrom_url().substring(this.getFrom_url().lastIndexOf(92) + 1) + ", codeReader=" + this.getCodeReader() + ", occupation=" + this.getOccupation() + '}';
-    }
+    }*/
 
     public static Reader login(String email, String password) {
         try {
@@ -234,7 +234,7 @@ public class Reader extends People implements IModelsUser {
         return null;
     }
 
-    public boolean savePhoto() throws Exception {
+/*    public boolean savePhoto() throws Exception {
         boolean var1;
         try {
             openConnection();
@@ -245,7 +245,7 @@ public class Reader extends People implements IModelsUser {
                 return true;
             }
 
-            this.copyPhoto(this.getFrom_url());
+//            this.copyPhoto(this.getFrom_url());
             var1 = false;
         } catch (Exception var5) {
             var5.printStackTrace();
@@ -255,9 +255,9 @@ public class Reader extends People implements IModelsUser {
         }
 
         return var1;
-    }
+    }*/
 
-    public boolean copyPhoto(String from_url) throws Exception {
+/*    public boolean copyPhoto(String from_url) throws Exception {
         try {
             InputStream inputStream = null;
             OutputStream outputStream = null;
@@ -283,5 +283,5 @@ public class Reader extends People implements IModelsUser {
             var10.printStackTrace();
             return false;
         }
-    }
+    }*/
 }

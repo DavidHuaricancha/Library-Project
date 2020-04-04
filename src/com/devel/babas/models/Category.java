@@ -51,6 +51,13 @@ public class Category extends Connect implements IModels {
         isNew = aNew;
     }
 
+    public static Category newCategory(String name){
+        Category c = new Category();
+        c.setName(name);
+
+        return  c;
+    }
+
     @Override
     public boolean save() throws Exception {
         try {
@@ -94,13 +101,6 @@ public class Category extends Connect implements IModels {
             closeConnection();
         }
         return true;
-    }
-
-    public static Category newCategory(String name){
-        Category c = new Category();
-        c.setName(name);
-
-        return  c;
     }
 
     public static Category get(String name){

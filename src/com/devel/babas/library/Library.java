@@ -17,7 +17,7 @@ public class Library {
 
 
     public static void main(String args[]){
-
+        System.out.println("David = 'Huari ' " );
 
         try {
 
@@ -75,6 +75,8 @@ public class Library {
 /*            Reader r = CReader.newReader("12345698","Nick","Macedo Cordova", "948285658",Boolean.valueOf("1"),Date.valueOf("2000-06-10"),"Av Tambopata","macedo123@gmail.com","123456789",Boolean.valueOf("1"),Boolean.valueOf( "0"),"Estudiante");
             System.out.println(r);
             r.save();*/
+
+//            Category c = CCategory.newCategory("Cuento De Adas");
 
         }catch (Exception e){
             e.printStackTrace();
